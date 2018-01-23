@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Javascript volume 2</title>
+    </head>
+    <body>
+        <h1>Welcome to javascript volume 2.</h1>
+    </body>
+    <script type="text/javascript">
+        var num = prompt("What's your favorite number?");
+        switch(num){
+            case "1":
+                console.log("You are a hutiya!");
+                break;
+            case "2":
+                console.log("You are double hutiya!!");
+                break;
+            case "3":
+                console.log("Itna kya odd!!");
+                break;
+            default:
+                console.log("Hogli bidu");
+                break;
+                     }
+        
+        for(i=0; i<=11; i++){
+            console.log(i);
+        }
+        
+        /*
+        *Print all the numbers from 1 to 100 with 3 exceptions.
+        *if the number is divisible by 3, print fizz.
+        *if the number is divisible by 5, print buzz.
+        *if the number is divisible by 3 and 5, print fizzbuzz.
+        */
+        
+        for(var j=1; j<=100; j++){
+            if(j % 3 === 0){
+                if(j % 5 === 0){
+                    console.log("fizzbuzz");
+                }else{
+                   console.log("fizz"); 
+                }  
+            }
+            else if(j % 5 === 0){
+                console.log("buzz");
+            }
+            else{
+                console.log(j);
+            }  
+        }
+        
+        function sayHello(name){
+            console.log("Oh! Hi," + " " + name);
+        }
+        sayHello("Sharad");
+        sayHello("Shristi");
+        
+        function area(side1 , side2){
+            console.log(side1 * side2);
+        }
+        area(10, 5);
+        
+        function randomNumber(){
+           console.log(Math.random());
+        }
+        randomNumber();
+        
+        var friends = ["sharad", "shristi", "harshita"];
+        console.log(friends[1]);
+        friends[3] = "suman";
+        friends.push("abhishek");
+        
+        function greetFriends(){
+            for(var k=0; k<friends.length; k++){
+                console.log("Oh hi," + " " + friends[k]);
+            }
+        }
+        greetFriends();
+    </script>
+</html>
